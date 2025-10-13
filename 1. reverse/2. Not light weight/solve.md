@@ -27,7 +27,8 @@ P.S. Нужно понимать, что декомпилирование - эт
 Тут описана вся логика шифрования. Но также, тут есть и таблицы, по ним можно переходить, два раза щёлкнув. Например, byte_SMTH. Примеры «этого byte» и «кода» будут ниже, чтобы было понимание.
 ![img_5.png](images/img_5.png)
 
-`__int64 sub_7FF6BBC07CF0()
+```bash
+__int64 sub_7FF6BBC07CF0()
 {
 __int64 v0; // rdx
 char *v1; // r8
@@ -86,7 +87,8 @@ return 0LL;
 sub_7FF6BBC01450(&unk_7FF6BBC09150, v6, v7, v8);
 }
 return 0LL;
-}`
+}
+```
 
 `byte_7FF6BBC08000 db 0F9h               ; DATA XREF: sub_7FF6BBC07CF0+14↑r
 .data:00007FF6BBC08001                 db 0F9h
