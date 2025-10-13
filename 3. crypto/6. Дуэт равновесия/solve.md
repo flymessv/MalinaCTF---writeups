@@ -22,6 +22,8 @@ n = 0xed8c3aa9686d488174277eee38ce6b6bcdb9f5e1ecbb27efd2656cb55ef7a2e1d0901c9f3e
 e = 65537<br>
 c = 0xe3e7bd24edec44bf30491a50ef9c5fb50c2089c2824929a255d4b7f495f29df917346d96c3ae4fce33fd3882a669db3f93c0a23911b294c43a0ff3dc6d80f092a43e073406ff1b1f9e153ede2320367195918b9ce08d5778ba78c04f39bd89d8daa4e9dae7c1a94bfac7e30ae2b25d3303eaf895a8d81408cc607db3b090019<br>
 
+Более подробные описания от умняша:<br>
+
 ![img.png](images/img.png)
 
 ![img_1.png](images/img_1.png)

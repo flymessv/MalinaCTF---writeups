@@ -9,37 +9,37 @@ forensic easy
 
 # Решение:
 Разорхивируем:<br>
-![img.png](img.png)
+![img.png](images/img.png)
 
 Только не всё так просто... **Оно** требует пароль.<br>
 Но и мы не пальцем деланы!<br>
 Получаем хэш и прогоняем через любой подходящий брутер.<br>
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 Вордлисты, по которым будем брутить, можно скачать в интернете. Их уйма<br>
 В кали есть стандартный rockyou. Да и в целом это такой "на дурачка", базовый список.<br>
 Запускаем и проверим, найдёт ли пароль<br>
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 Таки-нашло. pittbull123_<br>
 Давайте теперь его введём<br>
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 Извлёкся png<br>
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 
 Однако, он так же не открывается((<br>
 А всё потому, что опять битый.<br>
 Проверим, с каким файлом вообще имеем дело<br>
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 
 Так и есть, это data, а не PNG.<br>
 Фиксим magic bytes (42 4D меняем на 50 4E).<br>
 Опять же, список всех сигнатур и Magic bytes есть в интернете, знать наизусть никто не знает))<br>
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 
 Фиксим!<br>
-![img_7.png](img_7.png)
+![img_7.png](images/img_7.png)
 
 И открываем)<br>
-![img_8.png](img_8.png)
+![img_8.png](images/img_8.png)

@@ -22,6 +22,8 @@ c = 0x23de721f1024b29cd0dd4f6c7ae0dd8ac8f1d9c9566fbfa3b1edf79324e485dbbb933c42e3
 дальше либо сразу c^d mod n, либо восстановление p,q ч/з квадратное уравнение
 ```
 
+Более подробные описания от умняша:<br>
+
 ![img.png](images/img.png)
 
 ![img_1.png](images/img_1.png)
