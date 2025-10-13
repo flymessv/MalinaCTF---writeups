@@ -25,6 +25,7 @@ forensic easy
 > 80 http
 > 443 https
 > 3389 rdp
+
 ![img_2.png](images/img_2.png)
 
 В одном из них есть и флаг, и хост (Host: VOVOVOSHKA).<br>

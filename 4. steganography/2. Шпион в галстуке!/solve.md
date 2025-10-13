@@ -9,16 +9,16 @@ steganography easy
 
 # Решение:
 Открываем:<br>
-![img.png](img.png)
+![img.png](images/img.png)
 
 Ничего нет...<br>
 Но мы ж не дураки, автору не верим.<br>
 Поэтому, проверяем, а с чем вообще имеем дело<br>
 А затем вспоминаем, что docx это архив))<br>
 И распаковываем)<br>
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
+![img_1.png](images/img_1.png)
+![img_2.png](images/img_2.png)
 
 И есть flag.txt<br>
 Читаем)<br>
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)

@@ -9,4 +9,4 @@ steganography easy
 
 # Решение:
 Пользуемся утилитой zsteg<br>
-![img.png](img.png)
+![img.png](images/img.png)

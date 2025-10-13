@@ -12,4 +12,4 @@ steganography easy
 ![img.png](images/img.png)
 
 Используем заливку:<br>
-![img_1.png](images/img_1.png)
+![img.png](images/img-1.png)
