@@ -13,5 +13,6 @@ forensic hard
 # Решение:
 Смотрим и НАСЛАЖДАЕМСЯ
 > [!WARNING] Работает только в одном ухе (не помню, правое или левое.) (фича телефонии)
+
 https://github.com/user-attachments/assets/1398788a-aa2a-4942-a8bd-12074635bf8f
 
