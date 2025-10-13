@@ -90,7 +90,8 @@ return 0LL;
 }
 ```
 
-`byte_7FF6BBC08000 db 0F9h               ; DATA XREF: sub_7FF6BBC07CF0+14↑r
+```bash
+byte_7FF6BBC08000 db 0F9h               ; DATA XREF: sub_7FF6BBC07CF0+14↑r
 .data:00007FF6BBC08001                 db 0F9h
 .data:00007FF6BBC08002                 db 0FFh
 .data:00007FF6BBC08003                 db 0D1h
@@ -131,10 +132,15 @@ return 0LL;
 .data:00007FF6BBC08026                 db 0CDh
 .data:00007FF6BBC08027                 db 0D9h
 .data:00007FF6BBC08028                 db 0D7h
-.data:00007FF6BBC08029                 db    0`
+.data:00007FF6BBC08029                 db    0
+```
 
-`byte_7FF6BBC07FFF db 0                  ; DATA XREF: sub_7FF6BBC07CF0+2D↑o`
-`ff_7FF6BBC080F0 dq offset sub_7FF6BBC07640`
+```bash
+byte_7FF6BBC07FFF db 0                  ; DATA XREF: sub_7FF6BBC07CF0+2D↑o
+```
+```bash
+ff_7FF6BBC080F0 dq offset sub_7FF6BBC07640
+```
 
 Что происходит?
 В коде берётся байтовый массив byte_7FF6BBC08000 и посимвольно ксорится с константой 0xAA, результат кладётся в Str2. Это видно по строке вида Str2[i] = byte ^ 0xAA;.
