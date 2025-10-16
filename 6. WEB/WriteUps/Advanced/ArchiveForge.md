@@ -1,8 +1,8 @@
 ArchiveForge
 ----------------
 
-# Автор: gr8str8some1
-# Решил: gr8str8some1
+# Автор: unatcoman
+# Решил: unatcoman
 
 Описание:
 ```
