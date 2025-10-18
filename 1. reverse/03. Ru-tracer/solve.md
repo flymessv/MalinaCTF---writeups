@@ -14,6 +14,10 @@ reverse easy
 
 ltrace, strace комментариями оставлены. <br>
 гуглим, изучаем, после чего пробиваем либо первым способом <br>
+
+> [!NOTE]
+> Вкратце: strace / ltrace — системные вызовы (open/read/write/execve) и вызовы библиотек (printf/malloc/strcmp).
+
 ![img_1.png](images/img_1.png)
 либо вторым
 ![img_2.png](images/img_2.png)
