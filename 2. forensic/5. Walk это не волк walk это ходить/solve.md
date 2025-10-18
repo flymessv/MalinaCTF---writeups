@@ -1,13 +1,13 @@
-## Walk это не волк walk это ходить [easy]
+# Walk это не волк walk это ходить [easy]
 200
 forensic easy
 
-# Автор: gr8str8some1
-# Решил: gr8str8some1
+### Автор: gr8str8some1
+### Решил: gr8str8some1
 
 > Описание: Бинарь есть. Задание есть. И причем тут волк?
 
-# Решение:
+### Решение:
 Проверяем, что перед нами:<br>
 ![img.png](images/img.png)
 

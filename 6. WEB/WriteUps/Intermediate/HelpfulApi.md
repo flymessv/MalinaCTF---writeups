@@ -1,8 +1,9 @@
-HelpfulApi
+HelpfulApi 
 ----------
+450
 
-# Автор: unatcoman
-# Решил: unatcoman
+### Автор: unatcoman
+### Решил: unatcoman
 
 Описание:
 ```
@@ -12,7 +13,7 @@ HelpfulApi
 
 Флаг: `SSU{R3al1y_H3lpfUl_4P1-AKSHD8213}`
 
-Решение:
+### Решение:
 
 1. Открываем страницу сайта
 

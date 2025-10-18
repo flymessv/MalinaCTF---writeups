@@ -1,16 +1,16 @@
-## Apchi! [easy]
+# Apchi! [easy]
 350
 reverse easy
 
-# Автор: gr8str8some1
-# Решил: gr8str8some1
+### Автор: gr8str8some1
+### Решил: gr8str8some1
 
 > Описание:<br>
  \- UPXchi!<br>
  \- Будьте здоровы!".<br>
   Кто-то явно простудился, запаковывая этот файл.<br>
 
-# Решение:
+### Решение:
 Воспользуемся программой DIE (detect it easy)<br>
 ![img.png](images/img.png)
 

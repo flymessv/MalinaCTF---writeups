@@ -1,13 +1,13 @@
-## RockMe [easy]
+# RockMe [easy]
 200
 forensic easy
 
-# Автор: gr8str8some1
-# Решил: gr8str8some1
+### Автор: gr8str8some1
+### Решил: gr8str8some1
 
 > Описание: Открывай архив, и посмотри флаг в картинке!)
 
-# Решение:
+### Решение:
 Разорхивируем:<br>
 ![img.png](images/img.png)
 

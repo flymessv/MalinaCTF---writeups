@@ -1,8 +1,9 @@
-HowNot2Admin (200 Баллов)
+HowNot2Admin
 -------------------------
+200
 
-# Автор: unatcoman
-# Решил: unatcoman
+### Автор: unatcoman
+### Решил: unatcoman
 
 Описание:
 ```
@@ -11,7 +12,7 @@ HowNot2Admin (200 Баллов)
 
 Флаг: `SSU{4Dm1n_4dM1n_4ga1n_f0r_r3al-JAS89123}`
 
-Решение:
+### Решение:
 
 1. Открываем страницу сайта
 

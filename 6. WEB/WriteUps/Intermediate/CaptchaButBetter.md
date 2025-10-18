@@ -1,9 +1,9 @@
 CaptchaButBetter
 ----------------
+450
 
-# Автор: unatcoman
-# Решил: unatcoman
-
+### Автор: unatcoman
+### Решил: unatcoman
 
 Описание:
 ```
@@ -12,7 +12,7 @@ CaptchaButBetter
 
 Флаг: `SSU{D3f1n1tely_n0t_4_r0B0T-ad8JJdKx}`
 
-Решение:
+### Решение:
 1. Открываем сайт
 
 ![Сайт](img/12.png)

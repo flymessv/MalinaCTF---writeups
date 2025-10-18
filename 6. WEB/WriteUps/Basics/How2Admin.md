@@ -1,8 +1,9 @@
-How2Admin (200 Баллов)
+How2Admin
 ----------------------
+200
 
-# Автор: unatcoman
-# Решил: unatcoman
+### Автор: unatcoman
+### Решил: unatcoman
 
 Описание:
 ```
@@ -11,7 +12,7 @@ How2Admin (200 Баллов)
 
 Флаг: `SSU{It5_Ju5t_Sl4sh_Adm1n_Dummy-JAK83277kLLM}`
 
-Решение:
+### Решение:
 
 1. Открываем страницу сайта
 

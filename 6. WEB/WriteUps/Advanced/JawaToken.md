@@ -1,8 +1,9 @@
 JawaToken
 ---------
+1000
 
-# Автор: randmik42
-# Решил: unatcoman
+### Автор: randmik42
+### Решил: unatcoman
 
 Описание:
 ```
@@ -11,7 +12,7 @@ JawaToken
 
 Флаг: ``SSU{aL0_Jw7_dA_dA_R@nd0M}``
 
-Решение:
+### Решение:
 
 1. Откроем сайт
 

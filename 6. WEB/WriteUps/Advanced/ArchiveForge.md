@@ -1,8 +1,9 @@
 ArchiveForge
 ----------------
+1000
 
-# Автор: unatcoman
-# Решил: unatcoman
+### Автор: unatcoman
+### Решил: unatcoman
 
 Описание:
 ```
@@ -11,7 +12,7 @@ ArchiveForge
 
 Флаг: ``SSU{s3rv3r_s1d3_arch1ve-ADASnn2}``
 
-Решение:
+###Решение:
 
 1. Откроем сайт
 

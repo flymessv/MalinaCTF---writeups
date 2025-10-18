@@ -1,8 +1,9 @@
 AskQl
 -----
+1000
 
-# Автор: unatcoman
-# Решил: unatcoman
+### Автор: unatcoman
+### Решил: unatcoman
 
 Описание:
 ```
@@ -11,7 +12,7 @@ AskQl
 
 Флаг: ``SSU{4sk_4nd_yOu_sh4ll_r3c3iv3-XLLDAGB761}``
 
-Решение:
+### Решение:
 
 1. Откроем страницу сайта
 

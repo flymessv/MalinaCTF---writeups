@@ -1,13 +1,13 @@
-## ELFception [hard]
+# ELFception [hard]
 1100
 reverse hard
 
-# Автор: gr8str8some1
-# Решил: gr8str8some1
+### Автор: gr8str8some1
+### Решил: gr8str8some1
 
 > Описание: С одним эльфом вы уже сталкивались. Но что делать, если их больше? (кроме того, что убегать)
 
-# Решение:
+### Решение:
 Пройдёмся по строкам.<br>
 ![img.png](images/img.png)
 

@@ -1,13 +1,13 @@
-## Шпион в галстуке! [easy]
+# Шпион в галстуке! [easy]
 200
 steganography easy
 
-# Автор: gr8str8some1
-# Решил: gr8str8some1
+### Автор: gr8str8some1
+### Решил: gr8str8some1
 
 > Описание: А если в принципе. То что такое docx?
 
-# Решение:
+### Решение:
 Открываем:<br>
 ![img.png](images/img.png)
 

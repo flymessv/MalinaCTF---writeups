@@ -1,9 +1,9 @@
-## Deep Blue Cipher [easy]
+# Deep Blue Cipher [easy]
 350
 steganography easy
 
-# Автор: gr8str8some1
-# Решил: gr8str8some1
+### Автор: gr8str8some1
+### Решил: gr8str8some1
 
 > Описание: Sift<br>
 Through<br>
@@ -15,7 +15,7 @@ Information<br>
 Demands<br>
 Extraction.<br>
 
-# Решение:
+### Решение:
 Во-1, ХВАЛИМ АВТОРА за описание таски.<br>
 Во-2, если там ещё и собрать заглавные, то получим один из инструменов решения, а точнее steghide.<br>
 

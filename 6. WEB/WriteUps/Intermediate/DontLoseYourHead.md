@@ -1,8 +1,9 @@
 DontLoseYourHead
 ----------------
+450
 
-# Автор: unatcoman
-# Решил: unatcoman
+### Автор: unatcoman
+### Решил: unatcoman
 
 Описание:
 ```
@@ -11,7 +12,7 @@ DontLoseYourHead
 
 Флаг: `SSU{0r_y0u_m1g4t_L05e_yoUr_H34der5-A523nBBB32}`
 
-Решение:
+### Решение:
 
 1. Открываем страницу сайта
 

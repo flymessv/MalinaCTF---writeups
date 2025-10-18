@@ -1,13 +1,13 @@
-## Phantom Streams [medium]
+# Phantom Streams [medium]
 550
 forensic medium
 
-# Автор: gr8str8some1
-# Решил: gr8str8some1
+### Автор: gr8str8some1
+### Решил: gr8str8some1
 
 > Описание: Отделом реагирования на инциденты было зафиксировано аномально большой объем смешанного сетевого трафика между двумя узлами. Проанализируйте TCP-streams: может, в одном из них есть что-то важное
 
-# Решение:
+### Решение:
 Запускаем в wireshark<br>
 ![img.png](images/img.png)
 
