@@ -1,0 +1,341 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+body > img,body > h1,body > h2, body > h3,body > h4,body > div,body > form {
+    margin: 0.25em 1.5em;
+}
+body > img {
+    max-width: 80vw;
+    border-radius: 1.5em;
+}
+body > p {
+    margin: 1.5em 3em;
+}
+main > img,main > h1,main > h2,main > h3,main > h4,main > div,main > form {
+    margin: 0.25em 1.5em;
+}
+main > img {
+    max-width: 750px;
+    border-radius: 1.5em;
+}
+main > p {
+    margin: 1.5em 3em;
+}
+main {
+    width: 800px;
+    margin: 3em auto;
+}
+@media (max-width: 800px) {
+    main {
+        width: 100vw;
+    }
+}
+/* form defaults */
+form {
+    display: flex;
+    flex-direction: column;
+}
+button,input {
+    padding: 0.4em 0.8em;
+    border: thin solid darkgrey;
+    border-radius: 0.5em;
+    background-color: white;
+    font-size: normal;
+}
+input:focus {
+    outline: none;
+    border: thin solid black;
+    background-color: #EEEEEE;
+}
+button:hover {
+    background-color: #EEEEEE;
+}
+button:active {
+    background-color: #CCCCCC;
+}
+/* structural classes */
+@media (max-width: 800px) {
+    .hide-800 {
+        display: none !important;
+    }
+    footer {
+        flex-direction: column !important;
+        gap: 1.5em;
+    }
+    main > img {
+        max-width: 90%;
+    }
+}
+@media not (max-width: 800px) {
+    .show-800 {
+        display: none !important;
+    }
+}
+.limit-250 {
+    max-width: 250px;
+}
+.limit-400 {
+    max-width: 400px;
+}
+.limit-600 {
+    max-width: 600px;
+}
+.left {
+    margin-right: auto;
+}
+.right {
+    margin-left: auto;
+}
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+.shadow-light {
+    box-shadow: #00000099 5px 5px 15px;
+}
+.shadow-lighter {
+    box-shadow: #00000099 2.5px 2.5px 10px;
+}
+.fs-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.fs-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.fc-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fc-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fe-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.fe-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.gap-50 {
+    gap: 0.5em;
+}
+.gap-75 { 
+    gap: 0.75em;
+}
+.gap-100 {
+    gap: 1em;
+}
+.gap-150 {
+    gap: 1.5em;
+}
+.menu-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: #00000033;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.menu {
+    width: 300px;
+    margin: 0;
+    margin-left: auto;
+    background-color: white;
+    height: 100%;
+    padding: 1.75em;
+    box-shadow: #00000099 -5px 0 30px;
+}
+.menu-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+.menu-head > h2 {
+    margin: 0;
+}
+/* style-specific classes */
+.box-1 {
+    padding: 0.25em 1.5em;
+    background-color: #9a7bf2;
+    color: white;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border-radius: 0.75em;
+}
+.header-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25em 1.5em;
+    background-color: #9a7bf2;
+    color: white;
+    margin-bottom: 1em;
+    border-bottom-left-radius: 0.75em;
+    border-bottom-right-radius: 0.75em;
+}
+.footer-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.75em 3em;
+    background-color: #9a7bf2;
+    color: white;
+    margin-top: 1em;
+    border-top-right-radius: 0.75em;
+    border-top-left-radius: 0.75em;
+}
+.background-1 {
+    background: url('bgtile.png') repeat left top, linear-gradient(to bottom, #572c7e99, #572c7eFF);
+    color: black;
+}
+.box-2 {
+    padding: 0.5em 2em;
+    background-color: #bc784e;
+    color: white;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border-radius: 0.75em;
+}
+.header-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25em 1.5em;
+    background-color: #bc784e;
+    color: white;
+    margin-bottom: 1em;
+}
+.footer-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.75em 3em;
+    background-color: #bc784e;
+    color: white;
+    margin-top: 1em;
+}
+.background-2 {
+    background: linear-gradient(to bottom, #a9470aBB, #FFFFFFFF), url('bgtile2.png') repeat left top;
+    color: black;
+}
+.background-2-2 {
+    background-color: #FFFFFF;
+    border-radius: 0.75em;
+    padding: 1.5em;
+}
+.outline-2 {
+    border: medium solid #a3511d;
+}
+.outline-2-top {
+    border-bottom: medium solid #a3511d;
+}
+.outline-2-bottom {
+    border-top: medium solid #a3511d;
+}
+.box-3 {
+    padding: 0.5em 2em;
+    background-color: #282828;
+    color: white;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border-radius: 0.75em;
+}
+.header-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25em 1.5em;
+    background-color: #282828;
+    color: white;
+    margin-bottom: 1em;
+}
+.footer-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.75em 3em;
+    background-color: #282828;
+    color: white;
+    margin-top: 1em;
+}
+.background-3 {
+    background-color: #192327;
+    background-image: url('bgtile.png');
+    color: white;
+}
+.outline-3 {
+    border: medium solid #333333;
+}
+.outline-3-top {
+    border-bottom: medium solid #333333;
+}
+.outline-3-bottom {
+    border-top: medium solid #333333;
+}
+/* White-color nav types */
+.header-1,.footer-1 nav {
+    & a:link {
+        color: #FFFFFF;
+        text-decoration: none;
+    };
+    & a:visited {
+        color: #CCCCCC;
+        text-decoration: none;
+    };
+    & a:hover {
+        color: #FFFFFF;
+        text-decoration: underline;
+    };
+    & a:active {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+}
+/* Black-color nav types */
+nav {
+    & a:link {
+        color: #555577;
+        text-decoration: none;
+    };
+    & a:visited {
+        color: #775577;
+        text-decoration: none;
+    };
+    & a:hover {
+        color: #555577;
+        text-decoration: underline;
+    };
+    & a:active {
+        color: #555577;
+        text-decoration: underline;
+    }
+}
+

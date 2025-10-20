@@ -1,0 +1,8 @@
+services:
+  chal5-back:
+    build: .
+    hostname: chal5-backend
+    restart: unless-stopped
+    networks:
+      level3:
+        ipv4_address: 10.129.1.8

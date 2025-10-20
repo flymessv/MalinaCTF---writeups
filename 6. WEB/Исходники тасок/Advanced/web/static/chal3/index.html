@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Hello world!</title>
+        <link rel="stylesheet" href="shared.css">
+        <meta charset="UTF-8">
+        <script src="shared.js"></script>
+    </head>
+    <body>
+        <div class="menu-bg" hidden>
+            <div class="menu">
+                <div class="menu-head">
+                    <h2>Menu</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="32" height="32" class="menu-close"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg>
+                </div>
+                <nav class="fs-col gap-75 show-800">
+                </nav>
+            </div>
+        </div>
+        <header class="header-2 shadow-light">
+            <h2>EmployeeDB</h2>
+            <nav class="hide-800">
+            </nav>
+            <button class="menu-open">Menu</button>
+        </header>
+        <main>
+            <h1>Поиск по базе данных</h1>
+            <div class="left limit-250 box-2 shadow-lighter">
+                <form onsubmit="return false;">
+                    <input name="email" id="form-email">
+                    <label for="form-email">E-Mail сотрудника</label>
+                    <button type="button" id="form-search">Поиск</button>
+                </form>
+            </div>
+            <hr>
+            <div id="employee-list" class="fs-col gap-75">
+            </div>
+        </main>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let button = document.getElementById("form-search");
+                button.addEventListener("click", function() {
+                    let xhr = new XMLHttpRequest();
+                    let cb = function(evt) {
+                        let list = document.getElementById("employee-list");
+                        list.replaceChildren([]);
+                        evt.forEach(function(article) {
+                            let element = document.createElement("div");
+                            element.classList = "box-2 limit-400 shadow-lighter";
+                            element.style.width = "100%";
+                            let header = document.createElement("h2");
+                            header.innerText = `${article.first_name} ${article.last_name}`;
+                            let info = document.createElement("p");
+                            info.innerText = `
+                            Должность: ${article.position}
+                            E-Mail: ${article.email}
+                            `
+                            element.appendChild(header);
+                            element.appendChild(info);
+                            list.appendChild(element);
+                        });
+                    };
+                    let queryfield = document.getElementById("form-email");
+                    let query = queryfield.value;
+                    let failcb = function(evt) {
+                        console.log("shit happened oh no");
+                    };
+                    xhr.open('GET', `/employee/search?query=${query}`, true);
+                    xhr.responseType = "json";
+                    xhr.onloadend = (_evt) => {
+                        if (xhr.status == 200) {
+                            cb(xhr.response);
+                        } else if (failcb) {
+                            failcb(xhr);
+                        }
+                    }
+                    xhr.send();
+                    /*cb([{"first_name": 'Валерий', "last_name": 'Жмышенко', 'email': 'valery.albertich@zhmyh.com', 'position': 'Заместитель управляющего по замещению управляющих'}]);*/
+                });
+            });
+        </script>
+    </body>
+</html>

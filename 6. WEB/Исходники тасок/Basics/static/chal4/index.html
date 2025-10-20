@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>chal1 — Где флаг?</title>
+  <link rel="stylesheet" href="/shared.css">
+  <!-- Привет, сорс-хантер! Награда уже здесь! -->
+</head>
+<body>
+  <div class="container">
+    <h1>Флага нет 🤷‍♂️</h1>
+    <p class="hint">Возможно, страница изменилась после загрузки…</p>
+
+    <div class="flag">SSU{v13w_s0urc3_t0_g3t_fl4g}</div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.body.innerHTML = `
+        <div class="container">
+          <h1>Флага нет 🤷‍♂️</h1>
+          <p>Точно ничего интересного.</p>
+          <p class="hint">Подсказка: флаг есть, но его уже нет.</p>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>

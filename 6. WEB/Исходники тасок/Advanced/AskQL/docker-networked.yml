@@ -1,0 +1,21 @@
+services:
+  chal3-db:
+    build: db/
+    hostname: chal-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: j3Xfnwu9hBQOlZ76
+      POSTGRES_USER: postgres
+      POSTGRES_DB: chal_db
+    networks:
+      level3:
+        ipv4_address: 10.129.1.5
+  chal3-back:
+    build: app/
+    hostname: chal3-backend
+    restart: unless-stopped
+    networks:
+      level3:
+        ipv4_address: 10.129.1.6
+    depends_on:
+      - chal3-db

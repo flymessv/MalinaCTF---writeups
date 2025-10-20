@@ -1,0 +1,19 @@
+services:
+  back:
+    build: app/
+    hostname: chal-backend
+    restart: unless-stopped
+    networks:
+      default: {}
+  web:
+    build: .
+    hostname: chal-nginx
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    networks:
+      default: {}
+    depends_on:
+      - back
+networks:
+  default: {}

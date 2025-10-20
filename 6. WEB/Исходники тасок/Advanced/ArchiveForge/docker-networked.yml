@@ -1,0 +1,8 @@
+services:
+  chal4-back:
+    build: app/
+    hostname: chal4-backend
+    restart: unless-stopped
+    networks:
+      level3:
+        ipv4_address: 10.129.1.7

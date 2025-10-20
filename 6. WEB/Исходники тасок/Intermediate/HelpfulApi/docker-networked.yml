@@ -1,0 +1,22 @@
+services:
+  chal1-back:
+    build: app/
+    hostname: chal1-backend
+    restart: unless-stopped
+    networks:
+      level2:
+        ipv4_address: 10.86.1.3
+#  web:
+#    build: .
+#    hostname: chal-nginx
+#    restart: unless-stopped
+#    ports:
+#      - "8080:8080"
+#    networks:
+#      default: {}
+#    depends_on:
+#      - back
+#networks:
+#  level2:
+#    external: true
+#    name: mctf-level2

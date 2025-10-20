@@ -1,0 +1,12 @@
+# Standalone version
+services:
+  back:
+    build: .
+    hostname: chal-backend
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    networks:
+      default: {}
+networks:
+  default: {}

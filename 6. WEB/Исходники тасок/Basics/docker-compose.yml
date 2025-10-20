@@ -1,0 +1,23 @@
+name: tasks-level1
+services:
+  web:
+    build: .
+#    ports:
+#      - "127.0.0.1:8001:8001"
+#      - "127.0.0.1:8002:8002"
+#      - "127.0.0.1:8003:8003"
+    networks:
+      level1:
+        ipv4_address: 10.43.1.2
+    hostname: basics.local
+networks:
+  level1:
+    name: mctf-level1
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.43.0.0/16
+          ip_range: 10.43.1.0/24
+          gateway: 10.43.1.1
+    driver_opts:
+      com.docker.network.bridge.name: br-mctfbasic

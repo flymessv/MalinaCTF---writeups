@@ -1,0 +1,32 @@
+name: tasks-level2
+include:
+  - ../DontLoseYourHead/docker-networked.yml
+  - ../HelpfulApi/docker-networked.yml
+services:
+  web:
+    build:
+      context: .
+      network: host
+    hostname: chal-nginx
+    restart: unless-stopped
+#    ports:
+#      - "8001:8001"
+#      - "8002:8002"
+#      - "8003:8003"
+    networks:
+      level2:
+        ipv4_address: 10.86.1.2
+    depends_on:
+      - chal1-back
+      - chal2-back
+networks:
+  level2:
+    name: mctf-level2
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.86.0.0/16
+          ip_range: 10.86.1.0/24
+          gateway: 10.86.1.1
+    driver_opts:
+      com.docker.network.bridge.name: br-mctfinterm

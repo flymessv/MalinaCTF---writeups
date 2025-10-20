@@ -1,0 +1,34 @@
+name: tasks-level3
+include:
+  - ../XPlore/docker-networked.yml
+  - ../LocalFiles/docker-networked.yml
+  - ../AskQL/docker-networked.yml
+  - ../ArchiveForge/docker-networked.yml
+  - ../JawaToken/docker-networked.yml
+services:
+  web:
+    build:
+      context: .
+      network: host
+    hostname: chal-nginx
+    restart: unless-stopped
+    networks:
+      level3:
+        ipv4_address: 10.129.1.2
+    depends_on:
+      - chal1-back
+      - chal2-back
+      - chal3-back
+      - chal4-back
+      - chal5-back
+networks:
+  level3:
+    name: mctf-level3
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.129.0.0/16
+          ip_range: 10.129.1.0/24
+          gateway: 10.129.1.1
+    driver_opts:
+      com.docker.network.bridge.name: br-mctfadv

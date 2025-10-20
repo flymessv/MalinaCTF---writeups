@@ -1,0 +1,11 @@
+services:
+  chal2-back:
+    build: app/
+    hostname: chal2-backend
+    networks:
+      level2:
+        ipv4_address: 10.86.1.4
+#networks:
+#  level2:
+#    external: true
+#    name: mctf-level2

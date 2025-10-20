@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Hello world!</title>
+        <link rel="stylesheet" href="shared.css">
+        <meta charset="UTF-8">
+        <script src="shared.js"></script>
+    </head>
+    <body>
+        <div class="menu-bg" hidden>
+            <div class="menu">
+                <div class="menu-head">
+                    <h2>Menu</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="32" height="32" class="menu-close"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg>
+                </div>
+                <nav class="fs-col gap-75 show-800">
+                    <a href="index.html">Home</a>
+                    <a href="index.html">Link 2</a>
+                    <a href="index.html">Somewhere else</a>
+                </nav>
+            </div>
+        </div>
+        <header class="header-2 shadow-light">
+            <div></div>
+            <h2>Конвертер единиц измерения (см в дюймы)</h2>
+            <div></div>
+        </header>
+        <main>
+            <h1>Конвертер единиц</h1>
+            <hr>
+            <p>Введите данные в любую из форм и нажмите Convert чтобы преобразовать единицы измерения</p>
+            <div class="center limit-400 box-2 shadow-lighter">
+                <form>
+                    <input name="cm" id="ctoi-cm" type="number">
+                    <label for="ctoi-cm">см.</label>
+                    <input name="inch" id="ctoi-inch" disabled>
+                    <label for="ctoi-inch">дюйм.</label>
+                    <button type="button" id="ctoi">Convert</button>
+                </form>
+            </div>
+            <div class="center limit-400 box-2 shadow-lighter">
+                <form>
+                    <input name="inch" id="itoc-inch" type="number">
+                    <label for="itoc-inch">дюйм.</label>
+                    <input name="cm" id="itoc-cm" disabled>
+                    <label for="itoc-cm">см.</label>
+                    <button type="button" id="itoc">Convert</button>
+                </form>
+            </div>
+        </main>
+        <script>
+            document.addEventListener("DOMContentLoaded", (_e) => {
+                let ctoi_button = document.getElementById('ctoi');
+                let ctoi_cm = document.getElementById('ctoi-cm');
+                let ctoi_inch = document.getElementById('ctoi-inch');
+                let itoc_button = document.getElementById('itoc');
+                let itoc_cm = document.getElementById('itoc-cm');
+                let itoc_inch = document.getElementById('itoc-inch');
+                ctoi_button.addEventListener("click", (_e) => {
+                    let cm = ctoi_cm.value;
+                    get(`/api/ctoi?cm=${cm}`, (response) => {
+                        ctoi_inch.value = response.inch;
+                    }, (_response) => {
+                        ctoi_inch.value = 'NaN';
+                    })
+                });
+                itoc_button.addEventListener("click", (_e) => {
+                    let inch = itoc_inch.value;
+                    get(`/api/itoc?inch=${inch}`, (response) => {
+                        itoc_cm.value = response.cm;
+                    }, (_response) => {
+                        itoc_cm.value = 'NaN';
+                    })
+                });
+            })
+        </script>
+        <footer>
+        </footer>
+    </body>
+</html>
