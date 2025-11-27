@@ -14,7 +14,7 @@
 3. Crypto
 4. Stego
 5. Osint
-6. Web
+6. Web<br>
 Формат флага SSU{...}
 
 > [!NOTE]
